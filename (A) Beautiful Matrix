@@ -1,0 +1,38 @@
+#include<stdio.h>
+int main()
+{
+    int arr[25], i, sum;
+    for(i=0; i<25; i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for(i=0; i<25; i++)
+    {
+        if(arr[i]==1)
+        {
+            sum= i+1;
+            break;
+        }
+    }
+    if(sum==13)
+    {
+        printf("0\n");
+    }
+    else if(sum==8 || sum==12 || sum==14 || sum==18)
+    {
+        printf("1\n");
+    }
+    else if(sum==3 || sum==7 || sum==9 || sum==11 || sum==15 || sum==17 || sum==19 || sum==23)
+    {
+        printf("2\n");
+    }
+    else if(sum==2 || sum==4 || sum==6 || sum==10 || sum==16 || sum==20 || sum==22 || sum==24)
+    {
+        printf("3\n");
+    }
+    else
+    {
+        printf("4\n");
+    }
+    return 0;
+}
