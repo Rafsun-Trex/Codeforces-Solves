@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int n,m,x;
+    scanf("%d %d",&n,&m);
+    if(n>m)
+    {
+        x = m;
+    }
+    else
+    {
+        x = n;
+    }
+    if(x%2==0)
+    {
+        printf("Malvika\n");
+    }
+    else
+    {
+        printf("Akshat\n");
+    }
+}
