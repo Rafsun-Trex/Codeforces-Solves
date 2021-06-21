@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char alu[200];
+    gets(alu);
+    int n,i,countl=0,countu=0;
+    n = strlen(alu);
+    for(i=0;i<n;i++)
+    {
+        if(alu[i]>='a'&&alu[i]<='z')
+        {
+            countl++;
+        }
+        else
+        {
+            countu++;
+        }
+    }
+    if(countu>countl)
+    {
+        strupr(alu);
+    }
+    else
+    {
+        strlwr(alu);
+    }
+    printf("%s",alu);
+
+}
