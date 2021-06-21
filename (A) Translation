@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char s[110],s1[111];
+    int i,l,l1,sum;
+    scanf("%s",&s);
+    scanf("%s",&s1);
+    l = strlen(s);
+    l1 = strrev(s1);
+    sum = strcmp(s,s1);
+    if(sum==0)
+    {
+        printf("YES\n");
+    }
+    else
+    {
+        printf("NO\n");
+    }
+
+}
