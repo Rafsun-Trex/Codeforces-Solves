@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    long long int b,m,w,sum=0,count=0, j=1, money=0,n;
+    int i;
+    scanf("%lld %lld %lld",&b,&m,&w);
+    for(i=1;count<w;i++)
+    {
+        money = i * b;
+        sum += money;
+        count++;
+    }
+    if(sum<=m)
+    {
+        printf("0\n");
+    }
+    else
+    {
+        n = sum - m;
+        printf("%d\n", n);
+    }
+}
