@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+    int m,n,sum=0,w,i;
+    scanf("%d %d",&m,&n);
+    int sum1=0, x = m;
+    while(m!=1)
+    {
+        if(m%n==0)
+        {
+            m = m/n;
+            sum = sum + m;
+        }
+        else
+        {
+            w = m%n;
+            m = m/n;
+            sum = sum + m;
+            m = m + w;
+            if(m<n)
+            {
+                m=1;
+            }
+        }
+    }
+
+    sum1 = sum + x;
+    printf("%d\n",sum1);
+
+
+}
