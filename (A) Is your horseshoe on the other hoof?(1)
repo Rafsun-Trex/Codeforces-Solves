@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    long long  s[4],i,j,ck=0,x;
+    for(i=0; i<4; i++)
+        scanf("%I64d",&s[i]);
+    for(i=0; i<4; i++)
+    {
+        x=s[i];
+        for(j=i+1; j<4; j++)
+        {
+            if(s[j]==x)ck++;
+        }
+    }
+    if(ck==6)printf("%I64d",ck/2);
+    else if(ck==3)printf("%I64d",ck-1);
+    else printf("%I64d",ck);
+}
