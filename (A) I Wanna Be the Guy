@@ -1,0 +1,39 @@
+#include<stdio.h>
+int main()
+{
+    int n, x, y, i,j,k, count = 0;
+    scanf("%d",&n);
+    scanf("%d",&x);
+    int x1[200];
+    for(i=0; i<x; i++)
+    {
+        scanf("%d",&x1[i]);
+    }
+    scanf("%d",&y);
+    for(i=x; i<x+y; i++)
+    {
+        scanf("%d",&x1[i]);
+    }
+    for(k=1; k<=n; k++)
+    {
+        count = 0;
+        for(j=0; j<x+y; j++)
+        {
+            if(k == x1[j])
+            {
+                count = 1;
+                break;
+            }
+        }
+        if(count == 0)
+        {
+            printf("Oh, my keyboard!\n");
+            break;
+        }
+    }
+    if(count)
+    {
+        printf("I become the guy.\n");
+    }
+
+}
