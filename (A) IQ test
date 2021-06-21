@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+    int n, arr[110], i, x=0, y=0, c, d;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for(i=1;i<=n;i++)
+    {
+        if(arr[i]%2==0)
+        {
+            x++;
+            c=i;
+        }
+        else
+        {
+            y++;
+            d=i;
+        }
+    }
+    if(x==1)
+    {
+        printf("%d\n",c);
+    }
+    else if(y==1)
+    {
+        printf("%d\n",d);
+    }
+    return 0;
+}
