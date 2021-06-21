@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    long long int n, a, b, c, d, sum, i, x;
+    scanf("%lld",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%lld %lld %lld %lld",&a,&b,&c,&d);
+        sum = a + b+ c + d;
+        if(sum%3==0)
+        {
+            x = sum/3;
+            if(x>=a && x>=b && x>=c)
+            {
+                printf("YES\n");
+            }
+            else
+            {
+                printf("NO\n");
+            }
+        }
+        else
+        {
+            printf("NO\n");
+        }
+    }
+}
