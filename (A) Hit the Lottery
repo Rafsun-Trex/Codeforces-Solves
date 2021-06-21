@@ -1,0 +1,45 @@
+#include<stdio.h>
+int main()
+{
+    int a,sum=0,count=0,i;
+    scanf("%d",&a);
+    sum=a;
+    for(i=0;i<a;i++)
+    {
+        if(sum==0)
+        {
+            break;
+        }
+        else if(sum-100>=0)
+        {
+            sum = sum-100;
+            count++;
+        }
+        else if(sum-20>=0)
+        {
+            sum = sum-20;
+            count++;
+        }
+        else if(sum-10>=0)
+        {
+            sum = sum-10;
+            count++;
+        }
+        else if(sum-5>=0)
+        {
+            sum = sum-5;
+            count++;
+        }
+        else if(sum-1>=0)
+        {
+            sum = sum-1;
+            count++;
+        }
+        else
+        {
+            continue;
+        }
+    }
+    printf("%d\n",count);
+    return 0;
+}
