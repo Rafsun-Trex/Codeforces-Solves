@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+    int num, i;
+    scanf("%d",&num);
+    for(i=1;i<num;i++)
+    {
+        if(i%2 != 0)
+        {
+            printf("I hate that ");
+        }
+        else
+        {
+            printf("I love that ");
+        }
+    }
+    if(num%2 == 0)
+    {
+        printf("I love it\n");
+    }
+    else if(num%2 != 0)
+    {
+        printf("I hate it\n");
+    }
+}
