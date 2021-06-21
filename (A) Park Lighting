@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int column, row, sum, result, n, i;
+    scanf("%d",&n);
+    for(i=0; i<n; i++)
+    {
+        scanf("%d %d", &column, &row);
+        sum = column * row + 1;
+        if(sum%2==0)
+        {
+            result = sum / 2;
+            printf("%d\n", result);
+        }
+        else
+        {
+            result = (sum - 1) / 2;
+            printf("%d\n", result);
+        }
+    }
+}
