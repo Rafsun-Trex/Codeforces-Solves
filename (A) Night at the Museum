@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+int main()
+{
+    char str[101];
+    int i, sum = 0, point, start = 0;
+    scanf("%s",str);
+    int l = strlen(str);
+    for(i=0;i<l;i++)
+    {
+        point = str[i]-97;
+        if(abs(point - start)<13)
+        {
+            sum = sum + abs(point - start);
+        }
+        else
+        {
+            sum = sum + 26 - abs(point - start);
+        }
+        start = point;
+    }
+    printf("%d\n",sum);
+    return 0;
+}
