@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int n, i, t;
+    scanf("%d %d",&n,&t);
+    char arr[n];
+    scanf("%s",arr);
+    while(t--)
+    {
+        for(i=0;i<n;i++)
+        {
+            if(arr[i]=='B' && arr[i+1]=='G')
+            {
+                arr[i]='G';
+                arr[i+1]='B';
+                i++;
+            }
+        }
+    }
+    printf("%s",arr);
+    return 0;
+}
